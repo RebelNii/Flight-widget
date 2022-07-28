@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    align-items: center;
+    background: rgb(247, 113, 191);
+    width: 100vw;
+
+}
+
+header{
+    padding: 10px;
+}
+
+.departures{
+    background: #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.departures table{
+    background: #363636;
+    text-align: left;
+}
+
+.departures table td{
+    height: 50px;
+}
+
+
+.departures table div{
+    border: 4px solid #363636;
+    background: #000;
+    float: left;
+    
+}
+
+#time{
+    width: 160px;
+}
+
+#destination{
+    width: 260px;
+}
+
+#gate{
+    width: 140px;
+}
+
+#flight{
+    width: 205px;
+}
+
+#remark{
+    width: 260px;
+}
+
+.flip{
+    animation: flipping  0.5s linear;
+}
+
+@keyframes flipping {
+    0%{
+        transform: rotateX(0deg);
+    }
+
+    50%{
+        transform: rotateX(90deg);
+    }
+
+    100%{
+        transform: rotateX(0deg);
+    }
+}
